@@ -12,7 +12,7 @@ class SetCacheHeaders
      * @return \Symfony\Component\HttpFoundation\Response
      *
      * @throws \InvalidArgumentException
-     */
+     */ 
     public function handle($request, Closure $next, $options = [])
     {
         $response = $next($request);

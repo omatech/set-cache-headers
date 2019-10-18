@@ -1,6 +1,8 @@
 <?php
 namespace Omatech\Middleware;
 use Closure;
+use Carbon\Carbon;
+
 class SetCacheHeaders
 {
     /**
@@ -30,11 +32,11 @@ class SetCacheHeaders
         {
           if (is_numeric($options['last_modified'])) 
           {
-            $options['last_modified']=\Carbon::createFromTimestamp($options['last_modified']);
+            $options['last_modified']=Carbon::createFromTimestamp($options['last_modified']);
           }
           else
           {
-            $options['last_modified']=\Carbon::parse($options['last_modified']);						
+            $options['last_modified']=Carbon::parse($options['last_modified']);						
           }
         }
 

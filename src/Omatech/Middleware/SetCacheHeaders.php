@@ -27,7 +27,7 @@ class SetCacheHeaders
         }
 
         if (isset($options['last_modified']) && is_numeric($options['last_modified'])) {
-            $options['last_modified']=new DateTime('@'.$options['last_modified']);
+            $options['last_modified']=new \DateTime('@'.$options['last_modified']);
         }
 
         $response->setCache($options);

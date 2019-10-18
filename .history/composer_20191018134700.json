@@ -1,0 +1,14 @@
+{
+    "name": "omatech/set-cache-headers",
+    "description": "Set cache headers correctly as a Middleware in laravel, you can pass a unix time to last_modified",
+		"minimum-stability":"dev",
+    "require": {
+    },
+    "require-dev": {
+        },
+		"autoload": {
+				"psr-4": {
+						"Omatech\\": "src/Omatech"
+				}
+    }
+}

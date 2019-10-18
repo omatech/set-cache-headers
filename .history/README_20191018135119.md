@@ -1,0 +1,1 @@
+Set cache headers correctly as a Middleware in laravel, you can pass a unix time to last_modified
